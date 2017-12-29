@@ -1,8 +1,9 @@
 #ifndef ELECTRA_SERVER_H
 #define ELECTRA_SERVER_H
 
-#include "electraabstractserver.h"
 #include <jsonrpccpp/server/connectors/httpserver.h>
+
+#include "electraabstractserver.h"
 
 class ElectraServer : public ElectraAbstractServer
 {
