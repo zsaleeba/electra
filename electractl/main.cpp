@@ -1,5 +1,5 @@
 #include <iostream>
-#include <jsonrpccpp/server/connectors/httpserver.h>
+#include <jsonrpccpp/client/connectors/httpclient.h>
 
 #include "electraclient.h"
 
