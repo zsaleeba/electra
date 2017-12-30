@@ -10,8 +10,8 @@ int main()
     ElectraClient c(httpclient);
     try
     {
-        std::cout << c.sayHello("Peter") << std::endl;
-        c.notifyServer();
+        /*Json::Value result = */ c.server_features();
+        //c.notifyServer();
     }
     catch (jsonrpc::JsonRpcException e)
     {

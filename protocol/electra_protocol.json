@@ -1,12 +1,173 @@
 [
 	{
-		"name": "sayHello",
-		"params": {
-			"name": "Peter"
+		"name" : "server.version",
+		"params" : {
+            "client_name" : "",
+            "protocol_version" : []
 		},
-		"returns" : "Hello Peter"
+		"returns" : []
 	},
 	{
-		"name" : "notifyServer"
-	}
+		"name" : "blockchain.address.get_balance",
+        "params" : {
+            "address" : ""
+        },
+        "returns" : {}
+	},
+    {
+        "name" : "blockchain.address.get_history",
+        "params" : {
+            "address" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.address.get_mempool",
+        "params" : {
+            "address" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.address.listunspent",
+        "params" : {
+            "address" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.address.subscribe",
+        "params" : {
+            "address" : ""
+        },
+        "returns" : ""
+    },
+    {
+        "name" : "blockchain.block.get_header",
+        "params" : {
+            "height" : 0
+        },
+        "returns" : {
+            "block_height" : 0,
+            "version" : 0,
+            "prev_block_hash" : "",
+            "merkle_root" : "",
+            "timestamp" : 0,
+            "bits" : 0,
+            "nonce" : 0
+        }
+    },
+    {
+        "name" : "blockchain.block.get_chunk",
+        "params" : {
+            "index" : 0
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.estimate_fee",
+        "params" : {
+            "number" : 0
+        },
+        "returns" : 0.0
+    },
+    {
+        "name" : "blockchain.headers.subscribe",
+        "returns" : {}
+    },
+    {
+        "name" : "blockchain.numblocks.subscribe",
+        "returns" : 0
+    },
+    {
+        "name" : "blockchain.relayfee",
+        "returns" : 0.0
+    },
+    {
+        "name" : "blockchain.scripthash.get_balance",
+        "params" : {
+            "scripthash" : ""
+        },
+        "returns" : {}
+    },
+    {
+        "name" : "blockchain.scripthash.get_history",
+        "params" : {
+            "scripthash" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.scripthash.get_mempool",
+        "params" : {
+            "scripthash" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.scripthash.listunspent",
+        "params" : {
+            "scripthash" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.scripthash.subscribe",
+        "params" : {
+            "scripthash" : ""
+        },
+        "returns" : []
+    },
+    {
+        "name" : "blockchain.transaction.broadcast",
+        "params" : {
+            "raw_tx" : ""
+        },
+        "returns" : ""
+    },
+    {
+        "name" : "blockchain.transaction.get",
+        "params" : {
+            "tx_hash" : ""
+        },
+        "returns" : ""
+    },
+    {
+        "name" : "blockchain.transaction.get_merkle",
+        "params" : {
+            "tx_hash" : "",
+            "height" : 0
+        },
+        "returns" : {}
+    },
+    {
+        "name" : "blockchain.utxo.get_address",
+        "params" : {
+            "tx_hash" : "",
+            "index" : 0
+        },
+        "returns" : {}
+    },
+    {
+        "name" : "server.add_peer",
+        "params" : {
+            "features" : {}
+        }
+    },
+    {
+        "name" : "server.banner",
+        "returns" : ""
+    },
+    {
+        "name" : "server.donation_address",
+        "returns" : ""
+    },
+    {
+        "name" : "server.features",
+        "returns" : {}
+    },
+    {
+        "name" : "server.peers.subscribe",
+        "returns" : []
+    }
 ]

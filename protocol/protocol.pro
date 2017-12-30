@@ -31,6 +31,8 @@ electra_protocol.CONFIG += no_link
 QMAKE_EXTRA_COMPILERS += electra_protocol
 PRE_TARGETDEPS += electraabstractserver.h electraclient.h
 
+INCLUDEPATH +=  $$OUT_PWD
+
 SOURCES += \
         electraserver.cpp
 
@@ -41,6 +43,3 @@ unix {
     target.path = /usr/lib
     INSTALLS += target
 }
-
-DISTFILES += \
-    electra_protocol.json
